@@ -1,0 +1,6 @@
+{
+  "__file": "wp_block",
+  "title": "Test Block",
+  "content": "<!-- wp:heading --><h2 class='wp-block-heading'>Hello World!</h2><!-- /wp:heading -->",
+  "syncStatus": ""
+}
