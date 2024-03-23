@@ -1,0 +1,6 @@
+{
+  "__file": "wp_block",
+  "title": "Post meta",
+  "content": "<!-- wp:group {\"align\":\"wide\",\"layout\":{\"type\":\"default\"}} -->\n<div class=\"wp-block-group alignwide\"><!-- wp:post-author /-->\n\n<!-- wp:group {\"layout\":{\"type\":\"flex\",\"flexWrap\":\"nowrap\"}} -->\n<div class=\"wp-block-group\"><!-- wp:post-terms {\"term\":\"category\"} /-->\n\n<!-- wp:post-terms {\"term\":\"post_tag\"} /--></div>\n<!-- /wp:group --></div>\n<!-- /wp:group -->",
+  "syncStatus": ""
+}

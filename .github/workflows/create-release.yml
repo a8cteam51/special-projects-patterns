@@ -1,0 +1,37 @@
+name: Create Release on Push to Trunk
+
+on:
+ push:
+    branches:
+      - trunk
+
+jobs:
+ create-release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          extensions: mbstring, intl
+          coverage: none
+
+      - name: Build JSON file
+        run: php ./.github/bin/build.php > ${{ github.event.repository.name }}.json
+
+      - name: Set version
+        id: set_version
+        run: echo "::set-output name=version::$(date +'%Y%m%d%H%M%S')"
+
+      - name: Create Release
+        id: create_release
+        uses: softprops/action-gh-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+        with:
+          tag_name: ${{ steps.set_version.outputs.version }}
+          draft: false
+          prerelease: false
+          files: ${{ github.event.repository.name }}.json

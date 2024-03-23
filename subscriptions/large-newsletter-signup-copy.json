@@ -1,0 +1,6 @@
+{
+  "__file": "wp_block",
+  "title": "Large Newsletter Signup",
+  "content": "<!-- wp:jetpack/subscriptions {\"subscribePlaceholder\":\"Email Address\",\"buttonBackgroundColor\":\"foreground\",\"textColor\":\"background\",\"fontSize\":\"1.125rem\",\"customFontSize\":\"1.125rem\",\"borderRadius\":0,\"borderWeight\":10,\"borderColor\":\"foreground\",\"className\":\"is-style-compact\"} /-->",
+  "syncStatus": "unsynced"
+}
