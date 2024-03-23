@@ -1,0 +1,6 @@
+{
+    "__file": "wp_block",
+    "title": "header-starter",
+    "content": "<!-- wp:group {\"className\":\"gapless-group\",\"layout\":{\"inherit\":true}} -->\n<div class=\"wp-block-group gapless-group\"><!-- wp:group {\"align\":\"full\",\"style\":{\"spacing\":{\"padding\":{\"bottom\":\"var(\\u002d\\u002dwp\\u002d\\u002dcustom\\u002d\\u002dgap\\u002d\\u002dvertical)\",\"top\":\"var(\\u002d\\u002dwp\\u002d\\u002dcustom\\u002d\\u002dgap\\u002d\\u002dvertical)\"}}},\"className\":\"site-header\",\"layout\":{\"type\":\"flex\",\"justifyContent\":\"space-between\"}} -->\n<div class=\"wp-block-group alignfull site-header\" style=\"padding-top:var(--wp--custom--gap--vertical);padding-bottom:var(--wp--custom--gap--vertical);\"><!-- wp:group {\"className\":\"site-brand\",\"layout\":{\"type\":\"flex\"}} -->\n<div class=\"wp-block-group site-brand\"><!-- wp:block {\"ref\":1039} /-->\n\n<!-- wp:navigation {\"ref\":706} /--></div>\n<!-- /wp:group -->\n\n<!-- wp:block {\"ref\":1040} /--></div>\n<!-- /wp:group --></div>\n<!-- /wp:group -->",
+    "syncStatus": ""
+}
